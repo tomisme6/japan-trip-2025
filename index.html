@@ -72,6 +72,11 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 .gsummary-title{font-size:12px;font-weight:600;color:var(--navy);margin-bottom:.5rem}
 .gsummary-row{display:flex;align-items:flex-start;gap:6px;margin-bottom:5px;font-size:11px;color:#444}
 .gnum{width:18px;height:18px;border-radius:50%;background:#2D5A3D;color:white;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.sched-row{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+.sched-in{display:inline-flex;align-items:center;gap:4px;font-size:10px;padding:3px 8px;border-radius:4px;font-weight:600}
+.sched-in.planned{background:#1A2744;color:white}
+.sched-in.ref{background:var(--color-background-secondary);color:var(--color-text-secondary);border:.5px solid var(--color-border-tertiary)}
+.meal-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 </style>
 </head>
 <body>
@@ -508,7 +513,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">☕ KAKO コーヒー</div><div class="card-price">¥550～</div></div>
-    <div class="card-sub">栄エリア · 7/2 吉卜力前の早餐</div>
+    <div class="card-sub">栄エリア</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#C9933A"></span>7/2（Day3）早餐 ✅排入行程</span></div>
     <div class="card-desc">早上限定四種果醬吐司＋小倉紅豆吐司。外酥內軟、鮮奶油＋四種酸甜果醬＋顆粒紅豆泥，奶香不甜膩。</div>
     <div class="card-warn">⏰ 早上限定！10:00前抵達</div>
     <a class="map-btn" href="https://maps.google.com/?q=KAKO+Coffee+Nagoya+栄" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
@@ -516,21 +522,24 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">☕ コメダ珈琲</div><div class="card-price">¥600–900</div></div>
-    <div class="card-sub">名古屋発祥 · 全市多店 · 7/3・7/6</div>
+    <div class="card-sub">名古屋発祥 · 全市多店</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#C9933A"></span>7/3（Day4）早餐 ✅排入行程</span><span class="sched-in planned"><span class="meal-dot" style="background:#C9933A"></span>7/6（Day7）早餐 ✅排入行程</span></div>
     <div class="card-desc">名古屋最具代表性早餐文化！點飲料附贈厚切吐司＋雞蛋。小倉紅豆吐司・蛋沙拉吐司・炸豬排三明治任選。</div>
     <a class="map-btn" href="https://maps.google.com/?q=コメダ珈琲+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">☕ コンパル 大須本店</div><div class="card-price">¥800–1,200</div></div>
-    <div class="card-sub">1947年創業 · 昭和老字號 · 7/5</div>
+    <div class="card-sub">1947年創業 · 昭和老字號</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#C9933A"></span>7/5（Day6）早餐 ✅排入行程</span></div>
     <div class="card-desc">招牌エビフライサンド（炸蝦三明治）・名古屋コーチン厚蛋三明治・味噌豬排三明治。三種必點！</div>
     <a class="map-btn" href="https://maps.google.com/?q=コンパル+大須本店+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card show">
     <div class="card-top"><div class="card-name">☕ 喫茶ツヅキ（1946年昭和老喫茶）</div><div class="card-price">¥700–1,200</div></div>
-    <div class="card-sub">太閤通駅1番出口 徒歩8分 · 7/6 名古屋最終日</div>
+    <div class="card-sub">太閤通駅1番出口 徒歩8分</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#C9933A"></span>7/6（Day7）早餐 ✅排入行程</span></div>
     <div class="card-desc">超高鮮奶油維也納咖啡・樓梯倒咖啡歐蕾！昭和浮誇布丁聖代。名古屋最終日壓軸早餐，全程最有個性的咖啡廳！</div>
     <div class="card-hl">⭐ 名古屋必去！昭和80年老店</div>
     <a class="map-btn" href="https://maps.google.com/?q=喫茶ツヅキ+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
@@ -538,7 +547,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">☕ LAMP LIGHT BOOKS CAFÉ</div><div class="card-price">¥600–1,200</div></div>
-    <div class="card-sub">ホテル1F · 24小時営業 · 任何天</div>
+    <div class="card-sub">ホテル1F · 24小時営業</div>
+    <div class="sched-row"><span class="sched-in ref">7/1–7/6 住宿期間隨時可用</span></div>
     <div class="card-desc">住宿飯店的書店咖啡廳，深夜也能來喝杯咖啡。公園旁的安靜氛圍，旅途中最放鬆的一杯咖啡。</div>
   </div>
 
@@ -546,7 +556,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card show">
     <div class="card-top"><div class="card-name">🎂 HARBS 名古屋本店（創始店）</div><div class="card-price">¥1,200–1,800</div></div>
-    <div class="card-sub">栄エリア · 7/3 熱田神宮後</div>
+    <div class="card-sub">栄エリア · 1976年創業</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#E8613A"></span>7/3（Day4）下午茶 ✅排入行程</span></div>
     <div class="card-desc">7月限定哈密瓜蛋糕（剛好遇到！）＋水果千層蛋糕。鮮奶油甜而不膩，蛋糕體超軟綿。1976年創業名古屋本店限定！</div>
     <div class="card-hl">🍈 7月夏季限定哈密瓜蛋糕，只有本店有！</div>
     <a class="map-btn" href="https://maps.google.com/?q=HARBS+名古屋本店" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
@@ -554,7 +565,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card show">
     <div class="card-top"><div class="card-name">🥐 Échiré エシレ（奶油泡芙）</div><div class="card-price">¥745/個</div></div>
-    <div class="card-sub">名古屋駅周辺 · 7/3 12:00前必買！</div>
+    <div class="card-sub">名古屋駅周辺</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#E8613A"></span>7/3（Day4）早餐後小食 ✅排入行程</span></div>
     <div class="card-desc">「奶油界的LV」名古屋限定！內餡＋表層厚實鮮奶油，冰涼如冰淇淋口感。下午即完售。</div>
     <div class="card-warn">⚠ 12:00前完售！早上出門先買</div>
     <a class="map-btn" href="https://maps.google.com/?q=エシレ+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
@@ -562,14 +574,16 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">☕ Golden Child Cafe（ゴルチャ）</div><div class="card-price">¥1,000–3,000</div></div>
-    <div class="card-sub">鶴舞高架下 · インスタ映えカフェ · 7/3</div>
+    <div class="card-sub">鶴舞高架下 · インスタ映えカフェ</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#E8613A"></span>7/3（Day4）下午茶 ✅排入行程</span></div>
     <div class="card-desc">ショートケーキ超人気！HARBS後に鶴舞（栄から地下鉄1駅）でハシゴ可能。11:00–翌2:30営業。女兒們一定愛！</div>
     <a class="map-btn" href="https://maps.google.com/?q=Golden+Child+Cafe+名古屋鶴舞" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">☕ Starbucks Reserve® Cafe（HAERA内）</div><div class="card-price">¥800–1,500</div></div>
-    <div class="card-sub">栄 HAERA B2F · 東海エリア初出店 · 7/3</div>
+    <div class="card-sub">栄 HAERA B2F · 東海エリア初出店</div>
+    <div class="sched-row"><span class="sched-in ref">7/3（Day4）HAERA逛街時 自由選擇</span></div>
     <div class="card-desc">通常スタバとは違うプレミアム体験！こだわり豆＋ベーカリー併設。「パンとコーヒーでちょっと贅沢な大人時間」。HAERAを逛りながら立ち寄り最適。</div>
     <a class="map-btn" href="https://maps.google.com/?q=HAERA+名古屋栄" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
@@ -578,28 +592,32 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍡 新雀本店（現烤麻糬）</div><div class="card-price">¥650</div></div>
-    <div class="card-sub">大須商店街内 · 逛大須必吃</div>
+    <div class="card-sub">大須商店街内</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/1（Day2）下午小食 ✅排入行程</span></div>
     <div class="card-desc">醬油＋黃豆粉雙拼，超大塊Q彈微脆。醬油口味帶鹹甜海苔香，黃豆粉有淡淡甜味。</div>
     <a class="map-btn" href="https://maps.google.com/?q=新雀本店+大須+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍡 金鯱橫丁 食べ歩き（名古屋城旁）</div><div class="card-price">各¥400–900</div></div>
-    <div class="card-sub">名古屋城旁 · 7/1</div>
+    <div class="card-sub">名古屋城旁</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/1（Day2）上午小食 ✅排入行程</span></div>
     <div class="card-desc">①整隻軟殼蟹漢堡 ②小倉紅豆奶油馬鈴薯 ③味噌田樂豆腐。全家邊逛名古屋城邊吃！</div>
     <a class="map-btn" href="https://maps.google.com/?q=金シャチ横丁+名古屋城" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍡 甘味茶屋（栗子蒙布朗冰淇淋）</div><div class="card-price">¥600前後</div></div>
-    <div class="card-sub">犬山城下町内 · 7/5</div>
+    <div class="card-sub">犬山城下町内</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#E8613A"></span>7/5（Day6）下午小食 ✅排入行程</span></div>
     <div class="card-desc">犬山城下町で絶対食べたいスイーツ！濃厚な栗の風味が絶品。涼しく食べながら城下町の街並みを楽しめる。</div>
     <a class="map-btn" href="https://maps.google.com/?q=甘味茶屋+犬山" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍡 あつた nagAya 食べ歩き</div><div class="card-price">各¥300–600</div></div>
-    <div class="card-sub">熱田神宮旁 · 7/3</div>
+    <div class="card-sub">熱田神宮旁</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/3（Day4）上午小食 ✅排入行程</span></div>
     <div class="card-desc">蝦仙貝之里（市區唯一）・章魚燒さく蛸・義式冰淇淋大福いもんね。熱田神宮參拜後のんびり食べ歩き！</div>
     <a class="map-btn" href="https://maps.google.com/?q=あつたnagAya+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
@@ -608,14 +626,16 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">☕ からふね屋珈琲 エキマルシェ新大阪</div><div class="card-price">¥500前後</div></div>
-    <div class="card-sub">JR新大阪駅 エキマルシェ · 7:00開店 · 7/1出發前</div>
+    <div class="card-sub">JR新大阪駅 エキマルシェ · 7:00開店</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#C9933A"></span>7/1（Day2）早餐 ✅排入行程</span></div>
     <div class="card-desc">ワンコインモーニング！ダッチアイスコーヒー（水出し珈琲）が名物。新幹線乗り場から近くて便利。</div>
     <a class="map-btn" href="https://maps.google.com/?q=からふね屋珈琲+エキマルシェ新大阪" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card hotel">
     <div class="card-top"><div class="card-name">☕ CINQS Hotel 無料自助早餐</div><div class="card-price">7:30–9:30 免費！</div></div>
-    <div class="card-sub">ホテル内 · 7/7・7/8</div>
+    <div class="card-sub">ホテル内</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#C9933A"></span>7/7（Day8）早餐 ✅排入行程</span><span class="sched-in planned"><span class="meal-dot" style="background:#C9933A"></span>7/8（Day9）早餐 ✅排入行程</span></div>
     <div class="card-desc">飯店免費自助早餐，含多種日式西式選擇。省錢省時，吃完直接出發！</div>
   </div>
 
@@ -623,7 +643,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card show">
     <div class="card-top"><div class="card-name">☕ THE CITY BAKERY グランフロント大阪</div><div class="card-price">¥800–1,500</div></div>
-    <div class="card-sub">グランフロント大阪 南館B1F · 8:00開店 · 7/1</div>
+    <div class="card-sub">グランフロント大阪 南館B1F · 8:00開店</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#C9933A"></span>7/1（Day2）梅田早午餐 ✅排入行程</span></div>
     <div class="card-desc">NY発の人気ベーカリーカフェ。焼きたてクロワッサン・マフィン・ケーキ。厚切りトースト＋ベーコンエッグプレートも人気。梅田観光の朝の贅沢！</div>
     <div class="card-hl">⭐ グランフロント内なので動線ロスなし</div>
     <a class="map-btn" href="https://maps.google.com/?q=THE+CITY+BAKERY+グランフロント大阪" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
@@ -631,21 +652,24 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">☕ OHANABATAKE グランフロント大阪</div><div class="card-price">¥1,000–1,500</div></div>
-    <div class="card-sub">グランフロント大阪 · JR大阪駅直結 · 7/1</div>
+    <div class="card-sub">グランフロント大阪 · JR大阪駅直結</div>
+    <div class="sched-row"><span class="sched-in ref">7/1（Day2）梅田 可替換選項</span></div>
     <div class="card-desc">話題のホットサンド専門店！「ふわとろ厚み玉子」入り6種類から選べる。サラダ＋ポテト＋ドリンク付きでボリューム満点。</div>
     <a class="map-btn" href="https://maps.google.com/?q=OHANABATAKE+グランフロント大阪" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">☕ 自家焙煎珈琲 カフェ バーンホーフ</div><div class="card-price">¥600–1,000</div></div>
-    <div class="card-sub">阪急三番街南館B2F · 梅田駅徒歩2分 · 7/7</div>
+    <div class="card-sub">阪急三番街南館B2F · 梅田駅徒歩2分</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#E8613A"></span>7/7（Day8）梅田逛街中途茶 ✅排入行程</span></div>
     <div class="card-desc">コーヒー専門家が一杯ずつ丁寧にドリップ。マドレーヌなど焼き菓子・ショートケーキも豊富。梅田逛街途中の隱れ家的カフェ。</div>
     <a class="map-btn" href="https://maps.google.com/?q=カフェバーンホーフ+阪急三番街" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card show">
     <div class="card-top"><div class="card-name">🎮 ポケモンカフェ大阪</div><div class="card-price">¥1,500–3,000</div></div>
-    <div class="card-sub">梅田周辺 · 7/7 · 完全預約制！</div>
+    <div class="card-sub">梅田周辺 · 完全預約制！</div>
+    <div class="sched-row"><span class="sched-in ref">7/7（Day8）選擇性安排（需提前預約）</span></div>
     <div class="card-desc">ポケモンキャラクターをモチーフにしたフード＆ドリンク！女兒們夢想中的體驗。</div>
     <div class="card-warn">⚠ 座席予約制！立刻確認官網剩餘座位 → osaka.pokemon-cafe.jp</div>
     <a class="map-btn" href="https://osaka.pokemon-cafe.jp/" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>官網預約</a>
@@ -655,14 +679,16 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🐙 会津屋 道頓堀店（たこ焼き）</div><div class="card-price">¥500–800</div></div>
-    <div class="card-sub">道頓堀 · ミシュラン掲載！ · 7/6</div>
+    <div class="card-sub">道頓堀 · ミシュラン掲載！</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/6（Day7）晚間食べ歩き ✅排入行程</span></div>
     <div class="card-desc">元祖たこ焼き・ミシュラン掲載！ソースなしの出汁味、大阪本場の味。</div>
     <a class="map-btn" href="https://maps.google.com/?q=会津屋+道頓堀" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍢 串カツだるま 道頓堀本店</div><div class="card-price">各¥100–300</div></div>
-    <div class="card-sub">道頓堀本店 · 7/6</div>
+    <div class="card-sub">道頓堀本店</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/6（Day7）晚間食べ歩き ✅排入行程</span></div>
     <div class="card-desc">大阪名物串炸！ソースの二度漬け禁止がルール。種類豊富でコスパ最高。</div>
     <a class="map-btn" href="https://maps.google.com/?q=串カツだるま+道頓堀本店" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
@@ -679,7 +705,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card show">
     <div class="card-top"><div class="card-name">🐟 富士碳燒鰻魚飯（うな富士）</div><div class="card-price">¥5,640</div></div>
-    <div class="card-sub">⭐ 米其林必比登推薦 · 名古屋第一 · 7/6</div>
+    <div class="card-sub">⭐ 米其林必比登推薦 · 名古屋第一</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/6（Day7）下午場 ✅排入行程</span></div>
     <div class="card-desc">稀少「青鰻」，表皮酥脆極致。鰻魚三吃：①原味炭烤 ②蔥末芥末 ③高湯茶泡飯。全程唯一保留的鰻魚飯，值得！</div>
     <div class="card-warn">⚠ 提前訂位！米其林人氣高</div>
     <a class="map-btn" href="https://maps.google.com/?q=うな富士+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
@@ -687,14 +714,16 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🦞 柳橋さんりょう（海鮮沾麵）</div><div class="card-price">¥1,800–2,500</div></div>
-    <div class="card-sub">名古屋駅徒歩8分 · 7/3</div>
+    <div class="card-sub">名古屋駅徒歩8分</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/3（Day4）午餐 ✅排入行程</span></div>
     <div class="card-desc">北海道小麦自製麵＋濃郁海鮮高湯。伊勢海老濃厚沾麵＋A5和牛小丼飯。擺盤精美如藝術品！視覺味覺雙重享受。</div>
     <a class="map-btn" href="https://maps.google.com/?q=柳橋さんりょう+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍣 廻鮮江戸前すし 魚魚丸</div><div class="card-price">¥2,000前後</div></div>
-    <div class="card-sub">LaLaport 名古屋港 · 港区役所駅2分 · 7/2</div>
+    <div class="card-sub">LaLaport 名古屋港 · 港区役所駅2分</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#534AB7"></span>7/2（Day3）晚餐 ✅排入行程</span></div>
     <div class="card-desc">稻燒鰹魚現場秀！職人現場捏製，誠意遠超連鎖迴轉壽司。吉卜力後輕鬆吃最適合，不用預約。</div>
     <a class="map-btn" href="https://maps.google.com/?q=魚魚丸+LaLaport名古屋みなとアクルズ" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
@@ -703,21 +732,24 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🥩 矢場とん 名古屋駅エスカ店</div><div class="card-price">¥1,800–2,500</div></div>
-    <div class="card-sub">1947年創業 · 名古屋味噌カツ老舖 · 7/1</div>
+    <div class="card-sub">1947年創業 · 名古屋味噌カツ老舖</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#534AB7"></span>7/1（Day2）晚餐 ✅排入行程</span></div>
     <div class="card-desc">名古屋味噌カツの代名詞！南九州豬肉×名古屋限定八丁味噌醬。名駅直結エスカ地下街。</div>
     <a class="map-btn" href="https://maps.google.com/?q=矢場とん+名古屋駅エスカ店" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍗 風来坊 名駅センチュリー豊田ビル店</div><div class="card-price">¥1,500–2,000</div></div>
-    <div class="card-sub">手羽先元祖 · 在地人最推 · 7/3</div>
+    <div class="card-sub">手羽先元祖 · 在地人最推</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#534AB7"></span>7/3（Day4）晚餐 ✅排入行程</span></div>
     <div class="card-desc">手羽先発祥の老舖！比世界の山将更多汁不乾柴。招牌元祖手羽先＋八丁味噌關東煮＋とり天むす。</div>
     <a class="map-btn" href="https://maps.google.com/?q=風来坊+名駅センチュリー豊田ビル" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍜 台灣拉麵 味仙 今池本店</div><div class="card-price">¥920＋炒青菜¥930</div></div>
-    <div class="card-sub">名古屋発祥 · 台灣完全買不到 · 7/4</div>
+    <div class="card-sub">名古屋発祥 · 台灣完全買不到</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#534AB7"></span>7/4（Day5）晚餐 ✅排入行程</span></div>
     <div class="card-desc">激辣版擔仔麵風格，香氣十足吃完狂冒汗。炒青菜有台灣熱炒店水準，有種在台灣的感覺！</div>
     <div class="card-warn">⚠ 辣度可請店家調整！</div>
     <a class="map-btn" href="https://maps.google.com/?q=味仙+今池本店+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
@@ -725,7 +757,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍗 鳥開総本家 名駅エスカ店</div><div class="card-price">¥1,500–2,000</div></div>
-    <div class="card-sub">全國丼大賽5年連續金賞 · 7/6</div>
+    <div class="card-sub">全國丼大賽5年連續金賞</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#C9933A"></span>7/6（Day7）早餐 ✅排入行程</span></div>
     <div class="card-desc">名古屋コーチン親子丼！在地土雞肉質緊實彈性，搭配滑嫩半熟蛋汁，溫潤順口。新幹線前最後一餐。</div>
     <a class="map-btn" href="https://maps.google.com/?q=鳥開総本家+名駅エスカ" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
@@ -734,7 +767,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card show">
     <div class="card-top"><div class="card-name">🥩 飛驒牛燒肉 午間套餐</div><div class="card-price">¥3,600/人</div></div>
-    <div class="card-sub">栄エリア · 午間限定 · 7/6</div>
+    <div class="card-sub">栄エリア · 午間限定</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/6（Day7）午餐 ✅排入行程</span></div>
     <div class="card-desc">A5飛驒牛五種部位＋厚切牛舌＋飛驒牛壽司。油花入口即化！晚餐同等級要¥8,000+。4人約¥14,400。</div>
     <div class="card-hl">⭐ 整趟旅行最強CP值一餐！</div>
     <a class="map-btn" href="https://maps.google.com/?q=飛騨牛焼肉+名古屋+栄" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
@@ -742,7 +776,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🥩 海蛇食堂（熟成肉・隱れ家）</div><div class="card-price">¥6,000–8,000</div></div>
-    <div class="card-sub">鶴舞駅徒歩8分 · 7/7 旅行最終夜</div>
+    <div class="card-sub">鶴舞駅徒歩8分</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#534AB7"></span>7/7（Day8）晚餐 ✅排入行程</span></div>
     <div class="card-desc">20–50日熟成黒毛和牛ステーキ！旅行最終夜の特別な一食。從難波搭計程車約¥800–1,000。</div>
     <div class="card-warn">⚠ 務必提前電話預約！090-4861-1104</div>
     <a class="map-btn" href="https://maps.google.com/?q=海蛇食堂+鶴舞+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
@@ -752,14 +787,16 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🥩 肉兵衛（飛驒A5和牛壽司）</div><div class="card-price">¥1,500–2,500</div></div>
-    <div class="card-sub">犬山城下町 · 7/5</div>
+    <div class="card-sub">犬山城下町</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/5（Day6）午餐 ✅排入行程</span></div>
     <div class="card-desc">犬山城下町で飛驒A5和牛壽司！城下町散策しながらの贅沢グルメ。</div>
     <a class="map-btn" href="https://maps.google.com/?q=肉兵衛+犬山" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍡 山田五平餅店</div><div class="card-price">¥300–500</div></div>
-    <div class="card-sub">犬山城下町 · 7/5</div>
+    <div class="card-sub">犬山城下町</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/5（Day6）午餐 食べ歩き ✅排入行程</span></div>
     <div class="card-desc">犬山の名物五平餅！味噌醬烤飯糰串，外焦內軟香氣十足。城下町食べ歩き必吃。</div>
     <a class="map-btn" href="https://maps.google.com/?q=山田五平餅店+犬山" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
@@ -768,14 +805,16 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍳 千房 道頓堀店（お好み焼き）</div><div class="card-price">¥1,500–2,000</div></div>
-    <div class="card-sub">道頓堀 · 7/6</div>
+    <div class="card-sub">道頓堀</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#534AB7"></span>7/6（Day7）晚餐 ✅排入行程</span></div>
     <div class="card-desc">大阪お好み焼き代表店！鐵板上桌，大阪魂。道頓堀初夜の食べ歩き後に。</div>
     <a class="map-btn" href="https://maps.google.com/?q=千房+道頓堀店" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card food">
     <div class="card-top"><div class="card-name">🍱 梅田フードホール（阪急三番街 B2）</div><div class="card-price">¥1,200–2,000</div></div>
-    <div class="card-sub">梅田 · 約1,000席 · 7/7</div>
+    <div class="card-sub">梅田 · 約1,000席</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#2A8C7E"></span>7/7（Day8）午餐 ✅排入行程</span></div>
     <div class="card-desc">18家多國料理！全家各吃各的超自由。和洋中・韓國料理など豊富。梅田逛街午餐最方便。</div>
     <a class="map-btn" href="https://maps.google.com/?q=梅田+阪急三番街フードホール" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
@@ -792,7 +831,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">✨ HAERA（ハエラ）</div><div class="card-price">2026.6.11 剛開幕！</div></div>
-    <div class="card-sub">栄 · 地下鉄栄駅直結 · 7/3</div>
+    <div class="card-sub">栄 · 地下鉄栄駅直結</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/3（Day4）下午 ✅排入行程</span></div>
     <div class="card-desc">名古屋栄最新ラグジュアリーモール！全65店舗。CHANEL名古屋栄（3フロア旗艦店）・Starbucks Reserve・TOHOシネマズ（5–9F）。建築本身就是藝術體驗！</div>
     <div class="card-hl">⭐ 您造訪時開幕不到1個月，全名古屋最熱話題</div>
     <a class="map-btn" href="https://maps.google.com/?q=HAERA+名古屋栄" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
@@ -800,28 +840,32 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏬 大須商店街</div></div>
-    <div class="card-sub">大須観音駅すぐ · 7/1</div>
+    <div class="card-sub">大須観音駅すぐ</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/1（Day2）下午 ✅排入行程</span></div>
     <div class="card-desc">名古屋最大商圈！古著・ゲーム・コスプレ・食べ歩き。動漫店・アニメイト・まんだらけ・らしんばん全在这裡。女兒們的天堂！</div>
     <a class="map-btn" href="https://maps.google.com/?q=大須商店街+名古屋" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏬 栄エリア（松坂屋・三越・PARCO）</div></div>
-    <div class="card-sub">地下鉄栄駅すぐ · 7/3</div>
+    <div class="card-sub">地下鉄栄駅すぐ</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/3（Day4）下午 ✅排入行程</span></div>
     <div class="card-desc">名古屋最繁華商業區！松坂屋名古屋店・名古屋PARCO・三越・BINO栄等百貨集中。コスメ・ファッション・ブランド掃貨。</div>
     <a class="map-btn" href="https://maps.google.com/?q=松坂屋名古屋店" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏬 名古屋駅 エスカ地下街・JRゲートタワー</div></div>
-    <div class="card-sub">名古屋駅直結 · 7/6</div>
+    <div class="card-sub">名古屋駅直結</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/6（Day7）上午 土産採買 ✅排入行程</span></div>
     <div class="card-desc">名古屋土産の聖地！エスカ地下街＋JRゲートタワー。小倉吐司夾心餅乾・外郎糕・名古屋ふらんす全在這裡採買。</div>
     <a class="map-btn" href="https://maps.google.com/?q=名古屋駅JRゲートタワー" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏋 Alpen NAGOYA（アルペン名古屋）</div></div>
-    <div class="card-sub">栄・ナディアパーク B1–5F · 7/6</div>
+    <div class="card-sub">栄・ナディアパーク B1–5F</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/6（Day7）下午 ✅排入行程</span></div>
     <div class="card-desc">日本最大スポーツ旗艦店！スポーツデポ＋アルペンアウトドアーズ＋ゴルフ5。10:00–21:00。HAERA・飛驒牛燒肉と同エリアで動線便利。</div>
     <a class="map-btn" href="https://maps.google.com/?q=アルペン名古屋+ナディアパーク" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
@@ -830,7 +874,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🎌 大須 アニメ・オタク街</div><div class="card-price">名古屋の秋葉原！</div></div>
-    <div class="card-sub">大須商店街内 · 7/1</div>
+    <div class="card-sub">大須商店街内</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/1（Day2）下午 ✅排入行程</span></div>
     <div class="card-desc">アニメイト名古屋パルコ・まんだらけ名古屋店・らしんばん大須店・ジーストア名古屋（コスプレ）・K-BOOKS名古屋フロンティア館（女性向け）</div>
     <div class="card-hl">💡 大須商店街内に密集！全部徒歩圏内</div>
     <a class="map-btn" href="https://maps.google.com/?q=アニメイト+名古屋パルコ" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>アニメイト名古屋パルコ</a>
@@ -838,7 +883,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🎬 ジブリパーク（吉卜力公園）グッズ</div></div>
-    <div class="card-sub">愛・地球博記念公園 · 7/2</div>
+    <div class="card-sub">愛・地球博記念公園</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/2（Day3）16:40–17:00 ✅排入行程</span></div>
     <div class="card-desc">天空飛行団（大倉庫内商店）：ジブリ限定グッズ。16:40–17:00が人潮最少！ヒンぬいぐるみ・トトログッズ・魔女宅グッズ。結帳台上的「天空飛行団小卡」免費取！</div>
     <a class="map-btn" href="https://maps.google.com/?q=35.184800,137.062100" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
@@ -847,56 +893,64 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏬 グランフロント大阪</div></div>
-    <div class="card-sub">JR大阪駅直結 · 7/1</div>
+    <div class="card-sub">JR大阪駅直結</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/1（Day2）早上梅田 ✅排入行程</span></div>
     <div class="card-desc">梅田最大複合施設！北館＋南館。Nintendo OSAKA・ポケモンセンター（南館6F）・THE CITY BAKERY・うめきた屋頂庭園。動漫×ショッピング×グルメ全制覇！</div>
     <a class="map-btn" href="https://maps.google.com/?q=グランフロント大阪" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏬 LINKS UMEDA（ヨドバシ梅田）</div></div>
-    <div class="card-sub">梅田駅徒歩3分 · 7/7</div>
+    <div class="card-sub">梅田駅徒歩3分</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/7（Day8）午前 ✅排入行程</span></div>
     <div class="card-desc">Nintendo OSAKA・ポケモンセンターOSAKA・カプコンストア！2025秋リニューアル。女兒們必瘋！家電＋動漫グッズ一棟で解決。</div>
     <a class="map-btn" href="https://maps.google.com/?q=LINKS+UMEDA+梅田" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏬 阪急うめだ本店 + 大丸梅田店</div></div>
-    <div class="card-sub">梅田駅すぐ · 7/7</div>
+    <div class="card-sub">梅田駅すぐ</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/7（Day8）午前 ✅排入行程</span></div>
     <div class="card-desc">阪急：約250店舗ファッション・雑貨。大丸：B1–5Fコスメ・美食。どちらも梅田最高級百貨！</div>
     <a class="map-btn" href="https://maps.google.com/?q=阪急うめだ本店" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏬 心斎橋PARCO（2026年大翻新！）</div></div>
-    <div class="card-sub">心斎橋駅直結 · 7/6</div>
+    <div class="card-sub">心斎橋駅直結</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/6（Day7）下午 ✅排入行程</span></div>
     <div class="card-desc">2026年大規模翻新中！TOGA・GANNI・AMBUSH新開幕。5–6F：どんぐり共和国・POP MART・BANDAI NAMCO（女兒超愛）。B2「心斎橋ネオン食堂街」。</div>
     <a class="map-btn" href="https://maps.google.com/?q=心斎橋PARCO" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏬 心斎橋筋商店街 + 大丸心斎橋</div></div>
-    <div class="card-sub">心斎橋 · 7/6</div>
+    <div class="card-sub">心斎橋</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/6（Day7）下午 ✅排入行程</span></div>
     <div class="card-desc">大阪最長商店街！PARCO連絡通路直通大丸本館。コスメ・ファッション・ブランド掃貨完整路線。</div>
     <a class="map-btn" href="https://maps.google.com/?q=心斎橋筋商店街" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🌿 梅田地下街（ホワイティうめだ）</div></div>
-    <div class="card-sub">梅田駅地下直結 · 7/7</div>
+    <div class="card-sub">梅田駅地下直結</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/7（Day8）午前 ✅排入行程</span></div>
     <div class="card-desc">全長1km・100店超の大迷宮地下街！隱藏名店邊逛邊發現。雨の日・夏の暑い日も快適に買い物できる。</div>
     <a class="map-btn" href="https://maps.google.com/?q=ホワイティうめだ" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏬 なんばパークス</div></div>
-    <div class="card-sub">難波駅すぐ · 7/7</div>
+    <div class="card-sub">難波駅すぐ</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/7（Day8）下午 ✅排入行程</span></div>
     <div class="card-desc">屋頂庭園＋ショッピング！都会の中の緑。カフェ・レストラン・ファッション揃い。</div>
     <a class="map-btn" href="https://maps.google.com/?q=なんばパークス" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🛒 ドン・キホーテ 道頓堀店</div></div>
-    <div class="card-sub">道頓堀 · 7/7</div>
+    <div class="card-sub">道頓堀</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/7（Day8）下午 ✅排入行程</span></div>
     <div class="card-desc">コスメ・お菓子・お土産・家電まで何でもある！深夜も営業。旅行最後のまとめ買いに。</div>
     <a class="map-btn" href="https://maps.google.com/?q=ドン・キホーテ+道頓堀" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
@@ -905,7 +959,8 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card show">
     <div class="card-top"><div class="card-name">🎌 日本橋でんでんタウン・オタロード</div></div>
-    <div class="card-sub">地下鉄「恵美須町駅」すぐ · 7/7</div>
+    <div class="card-sub">地下鉄「恵美須町駅」すぐ</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/7（Day8）下午 ✅排入行程</span></div>
     <div class="card-desc">西日本最大動漫聖地！約500mのオタロード：<br>アニメイト大阪日本橋（西日本最大）・まんだらけグランドカオス・コトブキヤ大阪店・ゲーマーズ大阪店・らしんばん日本橋店</div>
     <div class="card-hl">💡 なんばから地下鉄2駅！夕方が人潮較少でおすすめ</div>
     <a class="map-btn" href="https://maps.google.com/?q=34.655300,135.506000" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>日本橋オタロード</a>
@@ -913,14 +968,16 @@ body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--bg);co
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🎮 Nintendo OSAKA + ポケモンセンターOSAKA</div></div>
-    <div class="card-sub">LINKS UMEDA内 · 梅田駅3分 · 7/7</div>
+    <div class="card-sub">LINKS UMEDA内 · 梅田駅3分</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/7（Day8）午前 ✅排入行程</span></div>
     <div class="card-desc">Nintendo OSAKA：Switch・限定グッズ・マリオ・ゼルダ・スプラ系。ポケモンセンター：ゲーム・カード・ぬいぐるみ。同棟なので両方一気に制覇！</div>
     <a class="map-btn" href="https://maps.google.com/?q=Nintendo+OSAKA+梅田" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
 
   <div class="card sight">
     <div class="card-top"><div class="card-name">🏬 心斎橋PARCO（動漫區）</div></div>
-    <div class="card-sub">心斎橋駅直結 · 7/6</div>
+    <div class="card-sub">心斎橋駅直結</div>
+    <div class="sched-row"><span class="sched-in planned"><span class="meal-dot" style="background:#6B5CE7"></span>7/6（Day7）下午 ✅排入行程</span></div>
     <div class="card-desc">5–6F：どんぐり共和国（吉卜力グッズ）・POP MART（盲盒）・BANDAI NAMCO。女兒的掃貨天堂！</div>
     <a class="map-btn" href="https://maps.google.com/?q=心斎橋PARCO" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>地圖</a>
   </div>
